@@ -1,0 +1,31 @@
+{
+  "packet_id": "hasc_00000001",
+  "created_at": "2026-02-13T08:00:00+01:00",
+  "source": "human",
+  "human_surface": "Voglio che il sistema mantenga coerenza tra linguaggio umano e IA evitando divergenza nel tempo.",
+  "structural_claims": [
+    { "type": "limit", "subject": "alignment", "predicate": "must_avoid", "object": "divergence", "confidence": 0.9 },
+    { "type": "temporal", "subject": "alignment", "predicate": "must_hold_over", "object": "time", "confidence": 0.8 },
+    { "type": "relation", "subject": "bridge_layer", "predicate": "should_use", "object": "invariants", "confidence": 0.85 }
+  ],
+  "constraints": [
+    "no semantic interpretation",
+    "measure invariants under transformations",
+    "emit STOP if structural impossibility is detected"
+  ],
+  "transformations": ["paraphrase", "translate", "compress", "permute"],
+  "omnia_metrics": {
+    "omega_score": 0.88,
+    "sei": 0.22,
+    "iri": 0.10,
+    "invariance_break": false,
+    "snrc_candidate": false,
+    "ice": { "impossibility": 0.05, "confidence": 0.92 }
+  },
+  "external_refs": [
+    "https://github.com/Tuttotorna/lon-mirror",
+    "https://github.com/Tuttotorna/OMNIA",
+    "https://github.com/Tuttotorna/omega-translator",
+    "https://github.com/Tuttotorna/omnia-limit"
+  ]
+}
